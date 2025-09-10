@@ -1,6 +1,7 @@
 ﻿#include "Date.h"
 #include <iomanip>
 #include "product.h"
+#include "Shop.h"
 int main()
 {
     Date today;
@@ -47,9 +48,13 @@ int main()
     //cout << "user " << d3 << endl;
     //cout << 5 << " + " << d3 << " = " << 5 + d3 << endl;
     //cout << d3 << " + " << 5 << " = " << d3 + 5 << endl;
-    Product a;
-    cin >> a;
+    //Product a;
+    //cin >> a;
     Product b("Milk", 50.99, Date(2025, 9, 1), 3);
     cout << "----------------------------------------\n" << endl;
-    cout << a << endl << b << endl;
+    //cout << a << endl << b << endl;
+    Shop ATB;
+    ATB.addProduct(b);
+    ATB.addProduct(Product("Apple", 105, Date() - 30, 60));
+    ATB.showInfo();
 }
