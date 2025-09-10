@@ -51,5 +51,24 @@ public:
 	Date operator - (float months)const&;
 	Date operator + (long years)const&;
 	Date operator - (long years)const&;
+		// рання реалізація Тема 24
+
+	Date& operator -- ();
+	Date operator -- (int);
+	Date& operator ++ ();
+	Date operator ++ (int);
+
+	friend Date operator + (int days, const Date& a);
+	friend Date operator - (int days, const Date& a);
+	
+	friend Date operator + (float months, const Date& a);
+	friend Date operator - (float months, const Date& a);
+
+	friend Date operator + (long years, const Date& a);
+	friend Date operator - (long years, const Date& a);
+
+
+	friend ostream& operator << (ostream& os, const Date& t);
+	friend istream& operator >> (istream& is, Date& t);
 
 };
