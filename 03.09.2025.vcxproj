@@ -125,6 +125,8 @@
   <ItemGroup>
     <ClCompile Include="03.09.2025.cpp" />
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Product.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h" />

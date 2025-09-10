@@ -141,11 +141,11 @@ bool Date::operator!=(const Date& obj) const&
 
 bool Date::operator>(const Date& obj) const&
 {
-	if (this->year >= obj.year)
+	if (this->year > obj.year)
 		return true;
-	else if (this->year == obj.year && this->month == obj.month)
+	else if (this->year == obj.year && this->month > obj.month)
 		return true;
-	else if (this->year == obj.year && this->month == obj.month && this->day == obj.day)
+	else if (this->year == obj.year && this->month == obj.month && this->day > obj.day)
 		return true;
 	else return false;
 }

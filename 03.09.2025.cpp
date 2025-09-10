@@ -1,5 +1,6 @@
 ﻿#include "Date.h"
 #include <iomanip>
+#include "product.h"
 int main()
 {
     Date today;
@@ -37,13 +38,18 @@ int main()
     //Date tmp2 = d1 + 20;
     //d1.showDate();
     //tmp2.showDate();
-    Date t2 = d1++;
-    t2.showDate();
-    d1.showDate();
-    cout << "---------------------------------\n" << endl;
-    Date d3;
-    cin >> d3;
-    cout << "user " << d3 << endl;
-    cout << 5 << " + " << d3 << " = " << 5 + d3 << endl;
-    cout << d3 << " + " << 5 << " = " << d3 + 5 << endl;
+    //Date t2 = d1++;
+    //t2.showDate();
+    //d1.showDate();
+    //cout << "---------------------------------\n" << endl;
+    //Date d3;
+    //cin >> d3;
+    //cout << "user " << d3 << endl;
+    //cout << 5 << " + " << d3 << " = " << 5 + d3 << endl;
+    //cout << d3 << " + " << 5 << " = " << d3 + 5 << endl;
+    Product a;
+    cin >> a;
+    Product b("Milk", 50.99, Date(2025, 9, 1), 3);
+    cout << "----------------------------------------\n" << endl;
+    cout << a << endl << b << endl;
 }
